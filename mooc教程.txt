@@ -1,0 +1,27 @@
+﻿
+安装react和es6    
+
+1,,  npm init
+
+
+2,,  npm install --save react react-dom babelify babel-preset-react babel-preset-es2015 --registry=https://registry.npm.taobao.org --verbose
+
+
+3,, 全局安装 webpack 和webpack-dev-server
+   npm install -g webpck webpack-dev-server 
+   然后在独立项目里再装
+   npm install --save webpack webpack-dev-server
+
+   还有babel-loader
+
+   (webpack-dev-server 加好久，卡在这里好久)
+
+
+4,, 热加载 
+
+   webpack-dev-server --content-base src --inline --hot 改命令暂时起不来同步刷新的效果  先用 webpack-dev-server 浏览器再进入目录可以自动刷新
+
+
+5,,使用ant-design 的技巧  在全局js里 import 'antd/dist/antd.css'
+   然后wepack.config.js 里添加{ test: /\.css$/, loader: 'style-loader!css-loader' }
+   记得install style-loader css-loader 两个包
