@@ -25,7 +25,7 @@ export default class IndexMale extends React.Component{
 		? male.map((maleItem,index)=>{
 			if(index<3){
 				return(
-					<li>
+					<li key={index}>
 						<Link to={`book/${maleItem.fiction_id}`}>
 							<div className="book-h5" >
 								<div className="book-h5__cover">

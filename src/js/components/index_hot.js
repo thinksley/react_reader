@@ -24,7 +24,7 @@ export default class IndexHot extends React.Component{
 		const {hot}=this.state;
 		const hotList = hot.length
 			? hot.map((hotItem, index) => (
-        		<li>
+        		<li key={index}>
         			<div className="book-h5">
         			    <Link to={`book/${hotItem.fiction_id}`}>
         				

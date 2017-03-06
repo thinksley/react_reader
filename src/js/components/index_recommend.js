@@ -25,7 +25,7 @@ export default class IndexRecommend extends React.Component{
 		? recommend.map((recommendItem,index)=>{
 		if(index==0){
 			return (
-					<li>
+					<li key={index}>
 					  <Link to={`book/${recommendItem.fiction_id}`}>
 						<div className="book-h5">
 							<div className="book-h5__cover">

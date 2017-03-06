@@ -22,7 +22,7 @@ export default class IndexFree extends React.Component{
 		const {free}=this.state;
 		const freeList=free.length
 		? free.map((freeItem,index)=>
-				<li >
+				<li key={index}>
 					<Link to={`book/${freeItem.fiction_id}`}>
 						<div className="u-book -vertical">
 							<div className="book-cover">
